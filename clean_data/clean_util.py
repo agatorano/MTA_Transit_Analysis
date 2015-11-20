@@ -27,7 +27,6 @@ def get_data():
 
 
 def save_file(name, data):
-
     """
     Saves pandas data to a csv file
     """
@@ -45,7 +44,6 @@ def get_data_local(name):
 
 
 def add_clean_columns(data):
-
     """
     Cleans the dataframe
     Adds: 'DAY', 'MONTH', 'TIMEFRAME_ENTRIES', 'TIMEFRAME_EXITS'
@@ -66,7 +64,6 @@ def add_clean_columns(data):
 
 
 def add_time_bin_column(data):
-
     """
     Takes a dataframe and creates a column with the times binned by every 4 hours
     """
@@ -79,7 +76,6 @@ def add_time_bin_column(data):
 
 
 def get_range(time):
-
     """
     used in add_time_bin to get the correct bin for the TIME_BIN column
     """
@@ -101,7 +97,6 @@ def get_range(time):
 
 
 def add_traffic_column(data):
-
     """
     Given a DatraFrame it addes a column
     that is the sum of the Entries and Exits for a station
@@ -119,7 +114,6 @@ def add_traffic_column(data):
 
 
 def drop_unneeded_columns(data):
-
     """
     removes the ENTRIES and EXITS column
     and also drops na values
@@ -133,7 +127,6 @@ def drop_unneeded_columns(data):
 
 
 def add_entry_exit_totals(data):
-
     """"
     Given a DataFrame it creates two columns containing both the
     sum of ENTRIES and EXITS
@@ -152,7 +145,6 @@ def add_entry_exit_totals(data):
 
 
 def add_day_month(data):
-
     """
     Given a DataFrame it creates columns for the Day, Day int value, 
     and the Month
@@ -169,7 +161,6 @@ def add_day_month(data):
 
 
 def create_dict_by_STATION(data):
-
     """
     This converts the MTA data frame into a dictionary
     The stations are keys
