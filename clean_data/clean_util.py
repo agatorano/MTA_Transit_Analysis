@@ -5,6 +5,7 @@ import pandas as pd
 
 
 def get_data():
+
     """
     Downloads data from online MTA data source
     It loops through all recent data, and appends it to a single csv datafile
@@ -35,6 +36,7 @@ def save_file(name, data):
 
 
 def get_data_local(name):
+
     """
     Reads data from local csv file
     """
@@ -177,6 +179,7 @@ def create_dict_by_STATION(data):
 
 
 def get_Day_sum(DataFrameDict):
+
     """"
     This takes a dictionary of data frames
     Returns a dictionary of dataframes containing the sum of entries per day
@@ -194,6 +197,7 @@ def get_Day_sum(DataFrameDict):
 
 
 def get_month_sum(DataFrameDict):
+
     """"
     This takes a dictionary of data frames
     Returns a dictionary of dataframes containing the sum of entries per month
@@ -209,6 +213,7 @@ def get_month_sum(DataFrameDict):
 
 
 def get_hour_sum(DataFrameDict):
+    
     """"
     This takes a dictionary of data frames
     Returns a dictionary of dataframes containing the sum of entries per month
